@@ -44,45 +44,38 @@ body {
   to { transform: rotate(360deg); }
 }
 
-/* Pétalos */
+/* Pétalos amarillos mejor formados */
 .flower__leaf {
   position: absolute;
-  width: 80px;
-  height: 120px;
-  background: #ffcc00;
-  border-radius: 50% 50% 0 0;
+  width: 100px;
+  height: 140px;
+  background: radial-gradient(circle at 30% 30%, #fff176, #fdd835 70%);
+  border-radius: 50% 50% 50% 50%;
   transform-origin: bottom center;
   box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
 }
 
-.flower__leaf:nth-child(1) {
-  transform: rotate(0deg) translateY(-30px);
-}
-
-.flower__leaf:nth-child(2) {
-  transform: rotate(90deg) translateY(-30px);
-}
-
-.flower__leaf:nth-child(3) {
-  transform: rotate(180deg) translateY(-30px);
-}
-
-.flower__leaf:nth-child(4) {
-  transform: rotate(270deg) translateY(-30px);
-}
+/* 6 pétalos en lugar de 4 para que quede más redondo */
+.flower__leaf:nth-child(1) { transform: rotate(0deg) translateY(-50px); }
+.flower__leaf:nth-child(2) { transform: rotate(60deg) translateY(-50px); }
+.flower__leaf:nth-child(3) { transform: rotate(120deg) translateY(-50px); }
+.flower__leaf:nth-child(4) { transform: rotate(180deg) translateY(-50px); }
+.flower__leaf:nth-child(5) { transform: rotate(240deg) translateY(-50px); }
+.flower__leaf:nth-child(6) { transform: rotate(300deg) translateY(-50px); }
 
 /* Centro de la flor */
 .flower__center {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 60px;
-  height: 60px;
-  background: #ff9900;
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(circle, #ffca28, #ff9800);
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 20px rgba(255, 153, 0, 0.7);
+  box-shadow: 0 0 25px rgba(255, 153, 0, 0.7);
 }
+
 
 /* 🌸 Flores cayendo */
 @keyframes fall {
