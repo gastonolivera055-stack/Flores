@@ -50,4 +50,63 @@ body {
   width: 80px;
   height: 120px;
   background: #ffcc00;
-  borde
+  border-radius: 50% 50% 0 0;
+  transform-origin: bottom center;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+}
+
+.flower__leaf:nth-child(1) {
+  transform: rotate(0deg) translateY(-30px);
+}
+
+.flower__leaf:nth-child(2) {
+  transform: rotate(90deg) translateY(-30px);
+}
+
+.flower__leaf:nth-child(3) {
+  transform: rotate(180deg) translateY(-30px);
+}
+
+.flower__leaf:nth-child(4) {
+  transform: rotate(270deg) translateY(-30px);
+}
+
+/* Centro de la flor */
+.flower__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background: #ff9900;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px rgba(255, 153, 0, 0.7);
+}
+
+/* 🌸 Flores cayendo */
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0.5;
+  }
+}
+
+.flower-fall {
+  position: absolute;
+  top: -50px;
+  font-size: 20px;
+  animation: fall linear infinite;
+  color: #ffcc00;
+}
+
+.flower-fall:nth-child(1) { left: 10%; animation-duration: 8s; }
+.flower-fall:nth-child(2) { left: 25%; animation-duration: 10s; }
+.flower-fall:nth-child(3) { left: 40%; animation-duration: 12s; }
+.flower-fall:nth-child(4) { left: 55%; animation-duration: 9s; }
+.flower-fall:nth-child(5) { left: 70%; animation-duration: 11s; }
+.flower-fall:nth-child(6) { left: 85%; animation-duration: 13s; }
