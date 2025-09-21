@@ -1,0 +1,48 @@
+/* 🌼 Estilos de las flores amarillas (Floricienta) */
+
+/* pétalos amarillos */
+.flower__leaf {
+  background: linear-gradient(180deg, #fff59d 0%, #ffeb3b 40%, #fdd835 100%);
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(255, 215, 64, 0.4), inset 0 -4px 8px rgba(255, 213, 79, 0.3);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* centro dorado */
+.flower__white-circle {
+  background: radial-gradient(circle, #fff9c4 0%, #fff176 50%, #fbc02d 100%);
+  box-shadow: 0 2px 10px rgba(255, 193, 7, 0.4);
+}
+
+/* luces brillantes alrededor */
+.flower__light {
+  background: radial-gradient(circle, rgba(255,235,59,0.9) 0%, rgba(255,214,0,0.6) 40%, transparent 80%);
+  filter: blur(8px);
+  opacity: 0.8;
+  animation: sparkle 3s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%   { transform: scale(0.95); opacity: 0.7; }
+  50%  { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+/* tallos y hojas verdes */
+.flower__line,
+.flower__line__leaf,
+.flower__g-long__top,
+.flower__grass--top {
+  background: linear-gradient(180deg, #66bb6a, #43a047);
+}
+
+/* césped */
+.flower__grass__leaf {
+  background: linear-gradient(180deg, #81c784, #388e3c);
+}
+
+/* hover pétalos (efecto PC) */
+.flower__leaf:hover {
+  transform: scale(1.08);
+  filter: brightness(1.2);
+}
