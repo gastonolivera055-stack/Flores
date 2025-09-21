@@ -1,0 +1,54 @@
+/* 🌸 Estilos para la portada (index.html) */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #fff0f6, #ffe4ec, #ffcce0);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+/* Texto principal con brillo */
+.greetings {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff4da6;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.description span {
+  font-size: 1.3rem;
+  color: #d63384;
+  text-shadow: 0 0 5px #ffb3d9, 0 0 10px #ff80bf;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+/* Botón */
+.button .botones {
+  background: linear-gradient(45deg, #ff4da6, #ff80bf);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button .botones a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button .botones:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(45deg, #ff3399, #ff66b2);
+}
